@@ -2,27 +2,65 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <meta charset="UTF-8">
-    <title>Super Cool Calculator!</title>
+    <title>Eli's TI-108 Type Calculator!</title>
 </head>
 
 <body>
 
-    <div class="display function">
 
-    </div>
-    <div class="grid-container">
-        <div class="grid1"> <button>1</button> </div>
-        <div class="grid2"> <button>2</button> </div>
-        <div class="grid3"> <button>3</button> </div>
-        <div class="grid4"> <button>4</button> </div>
-        <div class="grid5"> <button>5</button> </div>
-        <div class="grid6"> <button>6</button> </div>
-        <div class="grid7"> <button>7</button> </div>
-        <div class="grid8"> <button>8</button> </div>
-        <div class="grid9"> <button>9</button> </div>
-        <div class="grid0"> <button>0</button> </div>
+<div class="d-flex mx-auto flex-column container-md bg-primary" style="width:fit-content" >
+    <div id="display-function" class="bg-secondary">
+        <p id="display"> </p>
     </div>
 
+    <div id="grid-row1" class="row">
+        <div id="grid-enter" class="col-sm-3"> <button id="button-enter" onclick="enterButt()">enter</button> </div>
+        <div id="grid-clear" class="col-sm-3"> <button id="button-clear">clear</button> </div>
+        <div id="grid-delete" class="col-sm-3"> <button id="button-delete">delete</button> </div>
+    </div>
+    <div id="grid-row2" class="row">
+        <div id="grid-sqrt" class="col-sm-3"> <button id="button-sqrt">√</button> </div>
+        <div id="grid(" class="col-sm-3"> <button id="button(">(</button> </div>
+        <div id="grid)" class="col-sm-3"> <button id="button)">)</button> </div>
+    </div>
+
+
+    <div id="grid-ro3" class="row">
+        <div id="grid1" class="col-sm-3" > <button id="button1" onclick="Butt1()">1</button> </div>
+        <div id="grid2" class="col-sm-3"> <button id="button2" onclick="Butt2()">2</button> </div>
+        <div id="grid3" class="col-sm-3"> <button id="button3">3</button> </div>
+    </div>
+
+
+
+    <div id="grid-row4" class="row">
+        <div id="grid4" class="col-sm-3"> <button id="button4">4</button> </div>
+        <div id="grid5" class="col-sm-3"> <button id="button5">5</button> </div>
+        <div id="grid6" class="col-sm-3"> <button id="button6">6</button> </div>
+    </div>
+    <div id="grid-row5" class="row">
+        <div id="grid7" class="col-sm-3"> <button id="button7">7</button> </div>
+        <div id="grid8" class="col-sm-3"> <button id="button8">8</button> </div>
+        <div id="grid9" class="col-sm-3"> <button id="button9">9</button> </div>
+    </div>
+    <div id="grid-row6" class="row">
+        <div id="grid^" class="col-sm-3"> <button id="button^">^</button> </div>
+        <div id="grid0" class="col-sm-3"> <button id="button0">0</button> </div>
+        <div id="grid." class="col-sm-3"> <button id="button.">.</button> </div>
+    </div>
+    <div id="grid-row7" class="row">
+        <div id="grid+" class="col-sm-3"> <button id="button+" onclick="ButtPlus()">+</button> </div>
+        <div id="grid-" class="col-sm-3"> <button id="button-">-</button> </div>
+        <div id="grid/" class="col-sm-3"> <button id="button/">/</button> </div>
+    </div>
+    <div id="grid-row8" class="row">
+        <div id="grid*" class="col-sm-3"> <button id="button*">*</button> </div>
+
+    </div>
+</div>
 </body>
 </html>
