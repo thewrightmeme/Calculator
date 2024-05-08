@@ -1,3 +1,23 @@
 #display-function{
     border:solid black;
+    width:600px
+}
+#button-enter{
+    border-radius:50px;
+    border-color:red;
+    width:65px
+}
+#button-clear{
+    border-radius:50px;
+    border-color:red;
+    width:65px
+}
+#button-delete{
+    border-radius:50px;
+    border-color:red;
+    width:65px
+}
+#calculator{
+    border-radius:5px;
+
 }
