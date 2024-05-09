@@ -65,6 +65,6 @@ function ButtEnter(){
 function ButtClear(){
     document.getElementById("display").innerHTML=" ";
 }
-function ButtDelete(){
-    document.getElementById("display").innerHTML-=" ";
+function ButtBack(){
+    document.getElementById("display").innerHTML=" ";
 }
