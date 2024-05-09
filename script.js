@@ -59,7 +59,8 @@ function ButtPara2(){
 }
 //-------------- display functions ----------------\\
 function ButtEnter(){
-    let evaluated=document.getElementById("display")
+    let expression=document.getElementById("display").innerHTML;
+    document.getElementById("display").innerHTML=eval(expression);
 }
 function ButtClear(){
     document.getElementById("display").innerHTML=" ";
