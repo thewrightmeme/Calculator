@@ -24,7 +24,7 @@ function Butt8(){
     document.getElementById("display").innerHTML+="8";
 }
 function Butt9(){
-    document.getElementById("display").innerHTML+="6";
+    document.getElementById("display").innerHTML+="9";
 }
 function Butt0(){
     document.getElementById("display").innerHTML+="0";
@@ -66,5 +66,6 @@ function ButtClear(){
     document.getElementById("display").innerHTML=" ";
 }
 function ButtBack(){
-    document.getElementById("display").innerHTML=" ";
+    let back = document.getElementById("display").innerHTML;
+    document.getElementById("display").innerHTML=back.toString().slice(0,-1);
 }

@@ -1,33 +1,39 @@
-#display-function{
+#calculator{
+    background-color: #BDB7AB;
+    border:solid black;
+    padding:10px
+}
+.display_funny{
+    overflow: auto;
+    width: 100%;
+    max-width: 400px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
     border:solid black;
 }
-#button-enter{
-    border-radius:50px;
-    border-color:red;
-    width:65px
-}
-#button-clear{
-    border-radius:50px;
-    border-color:red;
-    width:65px
-}
-#button-delete{
-    border-radius:50px;
-    border-color:red;
-    width:65px
-}
-#calculator{
-    width: fit-content;
-    border-radius:5px;
-}
-#calButtons{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto;
-        background-color: black;
-        padding: 10px;
 
+#calButtons{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    grid-template-columns: repeat(4,100px);
+    background-color: #D0C9C1;
+    padding: 20px;
+    border-radius: 10px;
+    border:solid black;
 }
-#calButtons  div {
-    text-align: center;
+
+.button{
+    border:3px solid black;
+    width: 70%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #C7C6C1;
+    cursor: pointer;
 }
-#button1
+.button hover{
+    background-color: grey;
+}
