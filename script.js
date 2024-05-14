@@ -40,7 +40,7 @@ function ButtDivide(){
     document.getElementById("display").innerHTML+="/";
 }
 function ButtMultiply(){
-    document.getElementById("display").innerHTML+="*";
+    document.getElementById("display").innerHTML+="**   ";
 }
 function ButtSqrt(){
     document.getElementById("display").innerHTML+="Math.sqrt(";
@@ -58,9 +58,16 @@ function ButtPara2(){
     document.getElementById("display").innerHTML+=")";
 }
 //-------------- display functions ----------------\\
+const history =[]
 function ButtEnter(){
     let expression=document.getElementById("display").innerHTML;
+    let result = eval(expression);
     document.getElementById("display").innerHTML=eval(expression);
+    history.push("Equation: ")
+    history.push(expression)
+    history.push(" = ")
+    history.push(result)
+    history.push("\n\n")
 }
 function ButtClear(){
     document.getElementById("display").innerHTML=" ";
@@ -68,4 +75,7 @@ function ButtClear(){
 function ButtBack(){
     let back = document.getElementById("display").innerHTML;
     document.getElementById("display").innerHTML=back.toString().slice(0,-1);
+}
+function ButtHistory() {
+    document.getElementById("history").innerHTML=history.toString();
 }
