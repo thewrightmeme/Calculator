@@ -61,9 +61,12 @@ function ButtPara2(){
 const history =[]
 const editHistory=[]
 function ButtEnter(){
+
     let expression=document.getElementById("display").innerHTML;
     let result = eval(expression);
     document.getElementById("display").innerHTML=eval(expression);
+    localStorage.setItem("Equation", expression);
+    localStorage.setItem("Result", result);
     history.push("Equation: ")
     history.push(expression)
     history.push(" = ")
